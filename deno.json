@@ -1,0 +1,28 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "fmt": {
+    "include": ["src/**/*.ts"],
+    "ignore": ["node_modules"],
+    "lineWidth": 120,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "proseWrap": "preserve",
+    "semiColons": true,
+    "singleQuote": true,
+    "useTabs": false
+  },
+  "lint": {
+    "include": ["src/**/*.ts"],
+    "ignore": ["node_modules"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "mongodb": "npm:mongodb@^6.10.0"
+  }
+}
